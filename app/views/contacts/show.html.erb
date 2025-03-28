@@ -1,0 +1,10 @@
+<p style="color: green"><%= 'Thank you for your message, we will contact you soon' %></p>
+
+<%= render @contact %>
+
+<div>
+  <%= link_to "Edit Form", edit_contact_path(@contact) %> |
+  <%= link_to "Back to Contact us", contacts_path %>
+
+  <%= button_to "Delete Form", @contact, method: :delete %>
+</div>
